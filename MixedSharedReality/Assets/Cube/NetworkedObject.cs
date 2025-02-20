@@ -18,7 +18,7 @@ public class NetworkedCube : MonoBehaviourPun
         {
             // Optionally, add any local transformations (e.g., drag or move the cube)
             // We sync position for shared state across devices
-            transform.position = new Vector3(Mathf.Sin(Time.time), 1f, 0f); // example of movement
+            transform.position = new Vector3(Mathf.Sin(Time.time), 1f, 0f);
         }
     }
 

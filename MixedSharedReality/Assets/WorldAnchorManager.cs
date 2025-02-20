@@ -33,7 +33,11 @@ public class WorldAnchorManager : MonoBehaviour
 
     // Create a transfer batch and add the WorldAnchor
     WorldAnchorTransferBatch transferBatch = new WorldAnchorTransferBatch();
-    transferBatch.AddWorldAnchor(anchorKey, anchor);
+    
+        if (!transferBatch.AddWorldAnchor(anchorKey, anchor))
+        {
+            Debug.Log($"Failed to add WorldAnchor with anchorKey={anchorKey}.\nWorldAnchorManager.cs, Ln: 37\n");
+        }
 
     Debug.Log($"Starting anchor export for key: {anchorKey}");
 
@@ -42,7 +46,7 @@ public class WorldAnchorManager : MonoBehaviour
 
     // Start the asynchronous export process
     WorldAnchorTransferBatch.ExportAsync(transferBatch,
-        (byte[] data) => 
+        (byte[] data) =>
         {
             // Collect data chunks as they become available
             serializedData.AddRange(data);
