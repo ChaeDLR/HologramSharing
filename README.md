@@ -17,14 +17,14 @@
 ### Links
 - Hololens 1 Emulator - https://learn.microsoft.com/en-us/windows/mixed-reality/develop/install-the-tools
 - Hyper V - https://www.youtube.com/watch?v=YxmLCdduI6U&ab_channel=DayOneTech
-- Visual Studio 2017 - https://visualstudio.microsoft.com/vs/older-downloads/
+- Visual Studio 2019 - https://visualstudio.microsoft.com/vs/older-downloads/
 - Unity Hub - https://docs.unity3d.com/hub/manual/InstallHub.html
 - Useful starting tutorial to familiarize with setting up a hololens project: https://learn.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/holograms-100
 
 ### Needed Software (Install sequentially)
 - Windows 10 or higher
 - Hyper V installed for windows
-- Visual Studio 2017  (Required to install Emulator)
+- Visual Studio 2019  (Required to install Emulator)
 - Hololens 1 Emulator (Needs Visual Studio 2017 to install)
 - Unity Hub
   - Install Unity 2019
