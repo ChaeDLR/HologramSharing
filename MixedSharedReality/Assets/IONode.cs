@@ -28,7 +28,7 @@ public class IONode : MonoBehaviourPun
         /// <summary>
         /// Call a RPC method of this GameObject on remote clients of this room (or on all, including this client).
         /// </summary>
-        this.photonView.RPC("MethodName", RpcTarget.All, );
+        //this.photonView.RPC("MethodName", RpcTarget.All, );
     }
 
     // Update is called once per frame
